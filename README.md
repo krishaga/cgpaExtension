@@ -24,6 +24,13 @@ CGPAEXTENSION/
 - **Calculates CGPA** when the button is clicked.
 - **Displays CGPA next to the button**.
 
+## ⚙️ Technologies Used
+
+- **JavaScript** - Content scripts for DOM manipulation.
+- **MutationObserver API** - For tracking page updates efficiently.
+- **Chrome Extensions API** - To interact with the results webpage.
+
+
 ## 🛠 Installation
 
 1. **Clone or Download** this repository.
