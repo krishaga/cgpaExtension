@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "CGPA Calculator",
+    "version": "1.0",
+    "description": "Calculates CGPA from BMSCE results page.",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "host_permissions": ["https://results.bmsce.in/home/result/*"],
+    "background": {
+      "service_worker": "/scripts/background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://results.bmsce.in/home/result/*"],
+        "js": ["/scripts/content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "/frontend/hello.html",
+      "default_icon": "/images/icon.png"
+    }
+  }
+  
