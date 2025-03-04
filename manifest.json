@@ -5,9 +5,6 @@
     "description": "Calculates CGPA from BMSCE results page.",
     "permissions": ["activeTab", "scripting", "storage"],
     "host_permissions": ["https://results.bmsce.in/home/result/*"],
-    "background": {
-      "service_worker": "/scripts/background.js"
-    },
     "content_scripts": [
       {
         "matches": ["https://results.bmsce.in/home/result/*"],
